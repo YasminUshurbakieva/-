@@ -1,0 +1,135 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	position: relative;
+	margin: 2rem;
+	padding: 0;
+	font-family: Roboto;
+	font-size: 1.5rem;
+	color: black;
+}
+
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+ul.site-width {
+	max-width: 70%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column;
+	margin-top: 3rem;
+}
+
+li {
+  margin: 0 0.5rem 2rem;
+  width: calc(50% - 1rem)
+}
+
+li.grey {
+	background-color: #f0f0f0;
+	width: 100%;
+	padding: 2rem;
+	margin-left: 0;
+	display: flex;
+	overflow: hidden;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+li.grey span:last-of-type {
+	margin-left: 2rem;
+}
+
+i {
+	color: red;
+	font-size: 2rem;
+}
+
+li.full {
+  width: calc(100% - 1rem);
+}
+
+li.title {
+	margin-bottom: 0;
+}
+
+li.title h2 {
+	margin: 0;
+}
+
+li.break {
+	margin-bottom: 5px;
+}
+
+label {
+  display: flex;
+  flex-flow: column;
+}
+
+input, textarea, select {
+  font-size: 1.5rem;
+	font-family: Roboto;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  border: 0.1rem #555 solid;
+	width: 100%;
+}
+
+input[type="file"] {
+	font-size: 1.2rem;
+}
+
+textarea {
+	min-height: 10rem;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+button {
+	display: block;
+	margin: auto;
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #d62020;
+	width: 100%;
+	border: 1px solid;
+	border-radius: 6px;
+	margin: 0 0 15px;
+	padding: 10px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+}
+button:hover, button:active, button:focus {
+  background: #d62020;
+}
+
+@media screen and (max-width: 700px){
+	span {
+		width: 100%;
+		padding: 10px;
+		margin: 0 !important;
+	}
+	li {
+		flex-flow: column;
+	}
+}
